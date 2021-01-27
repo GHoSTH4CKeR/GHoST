@@ -27,9 +27,9 @@ banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TBomb'
+        echo 'Introducing GHoSTomb'
     else
-        figlet TBomb
+        figlet GHoST
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSpeedX \e[0m"
@@ -97,7 +97,7 @@ else
     echo .
     echo .
     install_deps
-    echo This Script Was Made By SpeedX > .update
+    echo This Script Was Made By GHoST > .update
     echo 'Requirements Installed....'
     pause
 fi
@@ -126,7 +126,7 @@ do
         echo -e "\e[1;34m Downloading Latest Files..."
         rm -f .update
         $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
+        echo -e "\e[1;34m RUN GHoST Again..."
         pause
         exit
     elif [ $ch -eq 5 ];then
